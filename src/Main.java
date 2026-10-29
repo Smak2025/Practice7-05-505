@@ -5,7 +5,6 @@ import ru.gr0550x.lec6.infrastructure.InMemoryCalculationRepository;
 import ru.gr0550x.lec6.ui.CalculatorWindow;
 
 void main() {
-    // Окно создаётся в потоке диспетчеризации событий Swing
     CalculationService service = new CalculationService(
             new InMemoryCalculationRepository(), new Exp4jFormulaParser()
     );
