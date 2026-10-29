@@ -3,6 +3,7 @@ package ru.gr0550x.lec6.ui;
 
 import ru.gr0550x.lec6.domain.Calculation;
 import ru.gr0550x.lec6.domain.IntegrationMethod;
+import ru.gr0550x.lec6.domain.MethodRealisation;
 
 import java.util.List;
 
@@ -12,7 +13,7 @@ public interface CalculatorView {
     String getLowerText();
     String getUpperText();
     String getIntervalsText();
-    IntegrationMethod getMethod();
+    MethodRealisation getMethod();
     Calculation getSelected();
 
     void clearForm();
