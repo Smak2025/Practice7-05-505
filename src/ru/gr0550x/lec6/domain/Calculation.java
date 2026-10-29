@@ -1,4 +1,3 @@
-// domain/Calculation.java
 package ru.gr0550x.lec6.domain;
 
 // Один расчёт: входные параметры и полученный ответ

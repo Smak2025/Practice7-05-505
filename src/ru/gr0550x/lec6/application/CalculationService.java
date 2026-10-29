@@ -1,4 +1,3 @@
-// application/CalculationService.java
 package ru.gr0550x.lec6.application;
 
 import ru.gr0550x.lec6.domain.Calculation;
