@@ -28,6 +28,10 @@ public class CalculationService {
         repository.delete(calculation);
     }
 
+    public void restore(Calculation calculation){
+        repository.save(calculation);
+    }
+
     public List<Calculation> getAll() {
         return repository.findAll();
     }
