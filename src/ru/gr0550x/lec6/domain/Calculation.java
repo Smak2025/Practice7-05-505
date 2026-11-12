@@ -8,9 +8,11 @@ public class Calculation {
     private final int intervals;            // число отрезков n
     private final String method;
     private final double result;            // значение интеграла
+    private final long elapsedNanoTime;
 
     public Calculation(String formula, double lower, double upper,
-                       int intervals, MethodRealisation method, double result) {
+                       int intervals, MethodRealisation method, double result,
+                       long elapsedNanoTime) {
         if (formula == null || formula.isBlank())
             throw new IllegalArgumentException("Формула не может быть пустой");
         if (method == null)
@@ -21,6 +23,7 @@ public class Calculation {
         this.intervals = intervals;
         this.method = method.name();
         this.result = result;
+        this.elapsedNanoTime = elapsedNanoTime;
     }
 
     public String getFormula()            { return formula; }
@@ -29,4 +32,5 @@ public class Calculation {
     public int getIntervals()             { return intervals; }
     public String getMethod()  { return method; }
     public double getResult()             { return result; }
+    public long getElapsedNanoTime() { return elapsedNanoTime; }
 }
