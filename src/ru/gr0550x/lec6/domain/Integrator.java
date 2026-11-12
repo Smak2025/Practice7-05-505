@@ -9,8 +9,6 @@ public final class Integrator {
 
     public static double integrate(DoubleUnaryOperator f, double a, double b,
                                    int n, MethodRealisation method) {
-        if (!(a < b))
-            throw new IllegalArgumentException("Нижний предел должен быть меньше верхнего");
         if (n < 1)
             throw new IllegalArgumentException("Число отрезков должно быть не меньше 1");
 
